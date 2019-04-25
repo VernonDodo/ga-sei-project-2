@@ -1,0 +1,26 @@
+{
+  "name": "ga-sei-project-2",
+  "version": "1.0.0",
+  "description": "This second project is my first foray into building a full-stack server application. I will be building a Node/Express App with Mongo/Mongoose, which means that I will learn about what it takes to build a functional application from the ground up myself.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VernonDodo/ga-sei-project-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VernonDodo/ga-sei-project-2/issues"
+  },
+  "homepage": "https://github.com/VernonDodo/ga-sei-project-2#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "hbs": "^4.0.4",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.5.3"
+  }
+}
