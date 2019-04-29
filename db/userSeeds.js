@@ -2,7 +2,7 @@
 REQUIREMENTS
 */
 
-let User = require('../models/user')
+let User = require('../models/user.js')
 
 let newUsers = [
     {ssn: "587-62-5931", first_name: "John", last_name: "Wick" },
@@ -24,8 +24,8 @@ let newUsers = [
 
 ]
 
-Users.remove({})
+User.remove({})
 .then(User.create(newUsers))
 .then(User => {
-    console.log("Created new users", Users)
+    console.log("Created new users", newUsers)
 })

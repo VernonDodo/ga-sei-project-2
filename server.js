@@ -28,8 +28,8 @@ app.use('/', routes)
 //= =====================
 // LISTENERS
 //= =====================
-// CONNECT MONGOOSE TO "credit-manager"
-const PORT = 3000;
+// CONNECT MONGOOSE TO "credit-manager" or process env
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log("Connected at port " + PORT);
 });

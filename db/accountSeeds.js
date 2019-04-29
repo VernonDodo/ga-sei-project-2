@@ -21,6 +21,6 @@ let newAccounts = [
 
 Account.remove({})
 .then(Account.create(newAccounts))
-.then(accounts => {
-    console.log('Created accounts', accounts)
+.then(Account => {
+    console.log('Created accounts', newAccounts)
 })
