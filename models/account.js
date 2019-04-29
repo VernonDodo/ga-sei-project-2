@@ -10,12 +10,12 @@ const Schema = mongoose.Schema;
 CREATE THE ACCOUNT SCHEMA 
 */
 const Account = new mongoose.Schema({
-    SSN: Number,
+    ssn: String,
     account_holder: String,
     type: String,
     balance: Number,
     status: String,
-    payments: []
+    account_ID: ObjectId
 });
 
 module.exports = mongoose.model("Account", Account);

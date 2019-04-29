@@ -4,10 +4,11 @@ const ObjectId = mongoose.Schema.Types.ObjectId;
 const Schema = mongoose.Schema;
 
 // create the user schema
-const User = new mongoose.Schema({
-    SSN: Number,
+const User = mongoose.Schema({
+    ssn: String,
     first_name: String,
-    last_name: String    
-});
+    last_name: String,
+    userID: ObjectId    
+})
 
 module.exports = mongoose.model("User", User);

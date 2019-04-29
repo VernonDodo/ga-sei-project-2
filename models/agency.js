@@ -8,9 +8,9 @@ const Schema = mongoose.Schema;
 
 // CREATE THE AGENCY SCHEMA
 const Agency = new Schema({
-    ssn: Number,
-    accounts: [],
+    ssn: String,
+    accounts: [{}],
     credit_score: Number
 });
 
-module.exports = mongoose.model('Ageny', Agency);
+module.exports = mongoose.model('Agency', Agency);
