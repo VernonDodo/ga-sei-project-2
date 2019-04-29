@@ -16,6 +16,6 @@ let newAgency = [
 
 Agency.remove({})
 .then(Agency.create(newAgency))
-.then(agency => {
+.then(Agency => {
     console.log('Created a new agency', newAgency)
 })
