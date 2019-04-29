@@ -1,6 +1,6 @@
-let Agency = require('../models/agency')
+let Record = require('../models/record')
 
-let newAgency = [
+let newRecords = [
     {ssn: "587-62-5931", accounts:[{type: "Mortgage", balance: 100000, status: "current"},{type: "Personal Loan", balance: 10000, status: "current"}], credit_score: 700 },
     {ssn: "587-62-5932", accounts: [{type: "Auto Finance", balance: 15000, status: "current"}], credit_score: 850},
     {ssn: "587-62-5933", accounts: [{type: "Personal Loan", balance: 1000, status: "current"}], credit_score: 800},
@@ -14,8 +14,8 @@ let newAgency = [
 
 ]
 
-Agency.remove({})
-.then(Agency.create(newAgency))
-.then(Agency => {
-    console.log('Created a new agency', newAgency)
+Record.remove({})
+.then(Record.create(newAgency))
+.then(Record => {
+    console.log('Created a new agency', newRecords)
 })

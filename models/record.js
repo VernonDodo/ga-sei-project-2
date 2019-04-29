@@ -7,11 +7,11 @@ const ObjectId = mongoose.Schema.Types.ObjectId;
 const Schema = mongoose.Schema;
 
 // CREATE THE AGENCY SCHEMA
-const Agency = new Schema({
+const Record = new Schema({
     ssn: String,
     accounts: [],
     credit_score: Number,
     record_ID: ObjectId
 });
 
-module.exports = mongoose.model('Agency', Agency);
+module.exports = mongoose.model('Record', Record);
