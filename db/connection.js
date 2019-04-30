@@ -5,7 +5,7 @@ if (process.env.MONGODB_URI) {
     mongoose.connect(process.env.MONGODB_URI);
 }
 else {
-    mongoose.connect('mongodb://localhost/credit-manager');
+    mongoose.connect('mongodb://localhost:3000/credit-manager');
 }
 
 mongoose.connection.on('error', function(err) {
@@ -14,7 +14,12 @@ mongoose.connection.on('error', function(err) {
 });
 
 mongoose.connection.once('open', function() {
-    console.log("Mongoose has connected to MongoDB!");
+    if (process.env.MONGODB_URI) {
+        console.log('You are now connected to ' +process.env.MONGODB_URI);
+    }
+    else {
+        console.log('You are now connected to /mongodb://localhost/credit-manager');
+    }
 });
 
 module.exports = mongoose;
