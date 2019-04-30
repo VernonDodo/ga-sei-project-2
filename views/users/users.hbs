@@ -1,12 +1,13 @@
 <main>
     <h2>User List</h2>
-    {{#each users}}   
     <div class="user-container">
+        {{#each users}}
         <div class="user">
             <p id="ssn">{{ssn}}</p><br>
             <p id="first_name">{{first_name}}</p><br>
             <p id="last_name">{{last_name}}</p>
         </div>
+        {{/each}}
     </div>
-    {{/each}}
+    
 </main>
