@@ -12,6 +12,7 @@ CREATE THE ACCOUNT SCHEMA
 const Account = new mongoose.Schema({
     ssn: String,
     account_holder: String,
+    creditor: String,
     type: String,
     balance: Number,
     status: String,

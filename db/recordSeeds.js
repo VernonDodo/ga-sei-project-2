@@ -15,7 +15,7 @@ let newRecords = [
 ]
 
 Record.remove({})
-.then(Record.create(newAgency))
+.then(Record.create(newRecords))
 .then(Record => {
-    console.log('Created a new agency', newRecords)
+    console.log('Created a new record', newRecords)
 })
