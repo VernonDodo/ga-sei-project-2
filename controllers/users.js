@@ -5,11 +5,11 @@ const User = require('../models/user');
 
 const UserController = {
 
-    /* INDEX 
-    This view sends all the users to the index view */
-    index: function (req, res) {
+    /* GET ALL USERS 
+    This function displays all the users */
+    getUsers: function (req, res) {
         User.find().then(users => {
-            res.render("users/index", { users })
+            res.render("users/users", { users })
         });
     },
 
@@ -23,11 +23,11 @@ const UserController = {
 
     /* CREATE
     This function is going to create a user if they do not exist in the database.
-    It should redirect the the index page to show that the user had been created. */
+    It should redirect to the all users page to show that the user had been created. */
     create: function (req, res) {
         User.create(req.body)
             .then(() => {
-                res.redirect("users/index")
+                res.redirect("users/users")
             });
     }
 

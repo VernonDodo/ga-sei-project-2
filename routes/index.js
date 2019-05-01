@@ -5,17 +5,18 @@ const userController = require("../controllers/users")
 const accountController = require("../controllers/accounts")
 const recordController = require("../controllers/records")
 
+router.get('/', accountController.home)
 
 /* The following routes are all the user routes */
 
-router.get('/users', userController.index)
+router.get('/users', userController.getUsers)
 router.get('/users/:id', userController.getUser)
 router.post('/users', userController.create)
 
 /* The following are all the account routes */
 router.get('/accounts', accountController.getAccounts)
 router.get('/accounts/:id', accountController.getAccount)
-router.post('/accounts/:d', accountController.update)
+router.post('/accounts/:id', accountController.update)
 router.post('/accounts', accountController.delete)
 
 /* The following are all the record routes */

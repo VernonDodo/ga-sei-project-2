@@ -5,6 +5,10 @@ REQUIREMENTS
 const account = require('../models/account');
 const accountController = {
 
+    home: function(req,res) {
+        res.render('home')
+    },
+
     /* GET
     Get all accounts for a single user */
     getAccounts: function (req, res) {
