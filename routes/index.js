@@ -11,7 +11,7 @@ router.get('/', accountController.home)
 
 router.get('/users', userController.getUsers)
 router.get('/users/:id', userController.getUser)
-router.post('/users', userController.create)
+router.post('/users/create', userController.createUser)
 
 /* The following are all the account routes */
 router.get('/accounts', accountController.getAccounts)

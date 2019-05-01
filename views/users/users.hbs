@@ -3,11 +3,9 @@
     <div class="user-container">
         {{#each users}}
         <div class="user">
-            <p id="ssn">{{ssn}}</p><br>
-            <p id="first_name">{{first_name}}</p><br>
-            <p id="last_name">{{last_name}}</p>
+            <p id="ssn"><a href="/users/{{_id}}">{{ssn}}</a></p>
+            <p id="first_name">Name: {{first_name}} {{last_name}}</p><br>
         </div>
         {{/each}}
     </div>
-    
 </main>
