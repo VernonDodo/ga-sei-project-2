@@ -5,6 +5,7 @@ const userController = require("../controllers/users")
 const accountController = require("../controllers/accounts")
 const recordController = require("../controllers/records")
 
+
 /* The following routes are all the user routes */
 
 router.get('/users', userController.index)

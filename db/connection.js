@@ -6,7 +6,7 @@ if (process.env.MONGODB_URI) {
     mongoose.connect(process.env.MONGODB_URI);
 }
 else {
-    mongoose.connect('mongodb://localhost/credit-manager', { useNewUrlParser: true});
+    mongoose.connect('/mongodb://localhost/credit-manager', { useNewUrlParser: true});
 }
 
 mongoose.connection.on('error', function(err) {

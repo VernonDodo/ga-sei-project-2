@@ -14,6 +14,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(methodOverride('_method'))
 
+// Code for the app to use handlebars
 app.set('view engine', 'hbs')
 
 app.use(express.static(__dirname + '/public'))
@@ -24,6 +25,12 @@ app.use(express.static(__dirname + '/public'))
 //= =====================
 // Links the server to our Router File
 app.use('/', routes)
+
+//====================================
+// Render the landing page for the app
+//=====================================
+
+
 
 //= =====================
 // LISTENERS
