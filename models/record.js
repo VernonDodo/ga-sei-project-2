@@ -6,6 +6,7 @@ const mongoose = require("../db/connection");
 const ObjectId = mongoose.Schema.Types.ObjectId;
 const Schema = mongoose.Schema;
 
+
 // CREATE THE AGENCY SCHEMA
 const Record = new Schema({
     ssn: String,
