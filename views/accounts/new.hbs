@@ -1,1 +1,74 @@
-<form action= method=""
+<h1 class="heading">Easi Credit Management</h1>
+<h2 class="subheading">Credit Management made easy</h2>
+<h3 class="page_heading">New Account Aplication</h3>
+<form action= method="/accounts/create" method="POST">
+    <fieldset>
+        <legend>Personal Information:</legend>
+        Date of Birth: <br>
+        <input type="date" name="DOB" value=" " placeholder="mm/dd/yyyy">
+        <br>
+        Social Security Number:<br>
+        <input type="text" name="ssn" value=" " placeholder=" nnn-nn-nnnn"
+        First name:<br>
+        <input type="text" name="firstname" value=" " placeholder="First Name">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname" value=" " placeholder="Last Name">
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend>Address Information:</legend>
+        Street: <br>
+        <input type="text" name="street" value=" " placeholder="House Number and Street Name">
+        <br>
+        City:<br>
+        <input type="text" name="city" value=" " placeholder=" City/Town"
+        State:<br>
+        <input type="text" name="state" value=" " placeholder="State">
+        <br>
+        Zip Code:<br>
+        <input type="text" name="zipcode" value=" " placeholder="Five-digit zip code">
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend>Employment Information:</legend>
+        Employer Name: <br>
+        <input type="text" name="employer" value=" " placeholder="Employer Name">
+        <br>
+        Salary:<br>
+        <input type="number" name="salary" value=" ">
+        Length of Service:<br>
+        <input type="text" name="number" value=" " >
+        <br>
+        Former Employee: Only if length of service is less than two years<br>
+        <input type="text" name="formerEmployee" value=" " placeholder="Former Employer Name">
+        <br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Other Income Sources</legend>
+        Rental Income:<br>
+        <input type="number" name="rentalIncome" value="0">
+        Benefit Income: Only if you want it considered as part of the credit assessment<br>
+        <input type="number" name="rentalIncome" value="0">
+    </fieldset>
+    <fieldset>
+        <legend>Loan Information</legend>
+        Amount:<br>
+        <input type="number" name="amount" value="0">
+        T<br>
+        Type of Loan:
+        <input type="radio" name="personal" value="Personal" checked>Personal<br>
+        <input type="radio" name="auto" value="Auto">Auto<br>
+        <input type="radio" name="mortgage" value="Mortgage">Mortgage<br>
+        <input type="radio" name="asset" value="Asset">Asset<br>
+    </fieldset>
+    <fieldset>
+        <legend>Terms and Conditions</legend>
+        I bind mysel to the information I submit and declare, to the best of my <br>
+        knowledge that it is accurate.<br><br>
+        I hereby bind myself to the terms and conditions set out in this agreement<br>
+        <input type="checkbox" name="agreement" value="I Agree">
+    </fieldset>
+
+  <input type="submit" value="Submit">
+</form>

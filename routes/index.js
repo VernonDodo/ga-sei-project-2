@@ -11,6 +11,7 @@ router.get('/', accountController.home)
 
 router.get('/users', userController.getUsers)
 router.get('/users/:id', userController.getUser)
+router.get('/users/new',userController.new)
 router.post('/users', userController.createUser)
 
 /* The following are all the account routes */
@@ -18,6 +19,7 @@ router.get('/accounts', accountController.getAccounts)
 router.get('/accounts/:id', accountController.getAccount)
 router.post('/accounts/:id', accountController.update)
 router.post('/accounts', accountController.delete)
+router.get('accounts/new', accountController.new)
 
 /* The following are all the record routes */
 router.get('/records/:id', recordController.getRecord)
