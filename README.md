@@ -28,10 +28,10 @@ The application also has to report all arrear and default accounts to a credit a
 ![alt text](https://github.com/VernonDodo/ga-sei-project-2/blob/master/public/images/Landing_Page.PNG)
 
 #### Account Application Page
-![alt text](https://github.com/VernonDodo/ga-sei-project-2/blob/master/public/images/Application_Page.PNG)
+![Account Application Page](https://github.com/VernonDodo/ga-sei-project-2/blob/master/public/images/Application_Page.PNG)
 
 #### Entity Relationship Diagram
-![alt text](https://github.com/VernonDodo/ga-sei-project-2/blob/master/public/images/Easi%20Credit%20ERD)
+![Entity Relationship Diagram](https://github.com/VernonDodo/ga-sei-project-2/blob/master/public/images/ERD.PNG)
 
 ### Project Artifacts
 - [Github Repository](https://github.com/VernonDodo/ga-sei-project-2)
