@@ -8,7 +8,7 @@ const User = new mongoose.Schema({
     ssn: String,
     first_name: String,
     last_name: String,
-    userID: ObjectId    
+    //userID: ObjectId    
 })
 
 module.exports = mongoose.model("User", User);

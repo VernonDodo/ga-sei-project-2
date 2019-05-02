@@ -38,12 +38,37 @@ const accountController = {
             });
     },
 
+    new: function(req,res) {
+        res.render("accounts/new")
+    },
 
     /* CREATE
     Create an account for a user. This should redirect back to all accounts view to 
     verify that the account was created for the user */
     create: function (req, res) {
-        account.create(req.body)
+        let company = "creditor"
+        switch (body.req.financetype) {
+            case "Personal":
+                company = "PFC"
+                break;
+            case "Auto Finance":
+                company = "PFC"
+                break;
+            case "Mortgage":
+                company = "MFC"
+                break;
+            default:
+                company = "AFC"
+
+        }
+        account.create({
+            ssn: req.body.ssn,
+            account_holder: (req.body.firstname + " " + req.body.lastname),
+            creditor: company,
+            type: body.req.financetype,
+            balance: body.req.amount,
+            status: "Current",    
+        }) 
             .then(accounts => {
                 res.redirect("accounts/accounts")
             });

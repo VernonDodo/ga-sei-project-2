@@ -21,6 +21,10 @@ const UserController = {
         });
     },
 
+    new: function(req,res){
+        res.render("users/create")
+    },
+
     /* CREATE
     This function is going to create a user if they do not exist in the database.
     It should redirect to the all users page to show that the user had been created. */
@@ -28,9 +32,13 @@ const UserController = {
         User.create({
             ssn: req.body.ssn,
             first_name: req.body.firstname,
-            last_name: req.body.lastname,
+            last_name: req.body.lastname
+            
+        }).then(user => {
+            //user.UserID = _id;
+            res.redirect("users/user") 
         })
-        res.redirect("users/user") 
+        
     }
 
 }
