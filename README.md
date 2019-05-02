@@ -34,8 +34,8 @@ The application also has to report all arrear and default accounts to a credit a
 ![alt text](https://github.com/VernonDodo/ga-sei-project-2/blob/master/public/images/Easi%20Credit%20ERD)
 
 ### Project Artifacts
-[Github Repository](https://github.com/VernonDodo/ga-sei-project-2)
-[Heroku Link](https://young-caverns-61179.herokuapp.com/) 
+- [Github Repository](https://github.com/VernonDodo/ga-sei-project-2)
+- [Heroku Link](https://young-caverns-61179.herokuapp.com/) 
 
 
 
