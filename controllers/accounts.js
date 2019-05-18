@@ -10,9 +10,9 @@ const accountController = {
     },
 
     /* GET
-    Get all accounts for a user by SSN */
+    Get all accounts*/
     getAccounts: function (req, res) {
-        account.find(req.body)
+        account.find()
             .then(accounts => {
                 res.render("accounts/accounts", accounts)
             });

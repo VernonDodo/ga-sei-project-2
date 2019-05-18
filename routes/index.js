@@ -23,7 +23,7 @@ router.get('accounts/new', accountController.new)
 
 /* The following are all the record routes */
 router.get('/records/:id', recordController.getRecord)
-router.get('/records', recordController.getRecords)
+router.get('/records', recordController.getAllRecords)
 router.post('/records/:id', recordController.update)
 router.post('/records', recordController.create)
 

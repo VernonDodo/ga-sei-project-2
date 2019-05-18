@@ -1,14 +1,15 @@
 <h1>User Records</h1>
 <div class="records-container">
-{{#foreach record}}
+    {{#each record}}
     <div class="record">
         <p>{{ssn}}</p>
-        {{#foreach record.accounts}}
+        {{#each record.accounts}}
         <p>{{creditor}}</p><br>
         <p>{{type}}</p><br>
         <p>{{balance}}</p><br>
         <p>{{status}}</p>
-        {{/foreach}}
+        {{/each}}
         <p>{{credit_score}}</p>
     </div>
+    {{/each}}
 </div>

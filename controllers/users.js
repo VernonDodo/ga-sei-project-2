@@ -22,7 +22,7 @@ const UserController = {
     },
 
     new: function(req,res){
-        res.render("users/create")
+        res.render("/users/new")
     },
 
     /* CREATE
@@ -35,7 +35,6 @@ const UserController = {
             last_name: req.body.lastname
             
         }).then(user => {
-            //user.UserID = _id;
             res.redirect("users/user") 
         })
         
