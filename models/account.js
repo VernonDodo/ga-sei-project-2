@@ -16,7 +16,7 @@ const Account = new mongoose.Schema({
     type: String,
     balance: Number,
     status: String,
-    account_ID: ObjectId
+    _id: ObjectId
 });
 
 module.exports = mongoose.model("Account", Account);

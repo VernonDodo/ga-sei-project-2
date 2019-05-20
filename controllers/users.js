@@ -22,7 +22,7 @@ const UserController = {
     },
 
     new: function(req,res){
-        res.render("users/create")
+        res.redirect("users/new")
     },
 
     /* CREATE
@@ -42,10 +42,6 @@ const UserController = {
     }
 
 }
-
-/*
-EXPORTS
-*/
 
 // export the controller
 module.exports = UserController;

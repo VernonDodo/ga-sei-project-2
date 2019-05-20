@@ -10,11 +10,11 @@ const accountController = {
     },
 
     /* GET
-    Get all accounts for a user by SSN */
+    Get all accounts */
     getAccounts: function (req, res) {
         account.find(req.body)
             .then(accounts => {
-                res.render("accounts/accounts", accounts)
+                res.render("accounts/accounts", {accounts})
             });
     },
 
@@ -52,7 +52,7 @@ const accountController = {
                 company = "PFC"
                 break;
             case "Auto Finance":
-                company = "PFC"
+                company = "VFC"
                 break;
             case "Mortgage":
                 company = "MFC"

@@ -18,8 +18,8 @@ router.post('/users', userController.createUser)
 router.get('/accounts', accountController.getAccounts)
 router.get('/accounts/:id', accountController.getAccount)
 router.post('/accounts/:id', accountController.update)
-router.post('/accounts', accountController.delete)
-router.get('accounts/new', accountController.new)
+router.post('/accounts/:id', accountController.delete)
+router.get('/accounts', accountController.new)
 
 /* The following are all the record routes */
 router.get('/records/:id', recordController.getRecord)
