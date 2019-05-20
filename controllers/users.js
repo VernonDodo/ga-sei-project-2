@@ -22,7 +22,11 @@ const UserController = {
     },
 
     new: function(req,res){
+<<<<<<< HEAD
         res.redirect("users/new")
+=======
+        res.render("/users/new")
+>>>>>>> 3019311bd8bed346031b3dfb74c19ed8924394ec
     },
 
     /* CREATE
@@ -35,7 +39,6 @@ const UserController = {
             last_name: req.body.lastname
             
         }).then(user => {
-            //user.UserID = _id;
             res.redirect("users/user") 
         })
         

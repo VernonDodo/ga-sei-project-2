@@ -10,9 +10,13 @@ const accountController = {
     },
 
     /* GET
+<<<<<<< HEAD
     Get all accounts */
+=======
+    Get all accounts*/
+>>>>>>> 3019311bd8bed346031b3dfb74c19ed8924394ec
     getAccounts: function (req, res) {
-        account.find(req.body)
+        account.find()
             .then(accounts => {
                 res.render("accounts/accounts", {accounts})
             });

@@ -7,9 +7,9 @@ const Record = require('../models/record');
 const RecordController = {
 
 /* GET
-Get all records for a single user */
-    getRecord: function(req,res) {
-        Record.findById(req.params.id)
+Get all records */
+    getAllRecords: function(req,res) {
+        Record.find()
         .then(records => {
             res.render("records/records", records)
         })
