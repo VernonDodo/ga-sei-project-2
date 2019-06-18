@@ -14,7 +14,7 @@ const accountController = {
     getAccounts: function (req, res) {
         account.find()
             .then(accounts => {
-                res.render("accounts/accounts", accounts)
+                res.render("accounts/accounts", {accounts})
             });
     },
 
@@ -27,20 +27,33 @@ const accountController = {
             });
     },
 
+    /* Search for an account by the SSN */
+    searchAccount: function(req,res) {
+        res.render("accounts/search")
+    },
+
     /* UPDATE
     Update an account for a user. This should redirect to the single account view 
     to show that the account had been updated*/
 
-    update: function (req, res) {
-        account.findByIdAndUpdate(req.params.id, req.body)
+    /*update: function (req, res) {
+        account.findByIdAndUpdate(req.params.id, req.body){
+            ssn: req.body.ssn,
+            account_holder: (req.body.firstname + " " + req.body.lastname),
+            creditor: company,
+            type: req.body.financetype,
+            balance: req.body.balance,
+            status: req.body.status,  
+            
+        }
             .then(accounts => {
-                res.redirect("accounts/account")
+                res.redirect("accounts/:id")
             });
     },
 
     new: function(req,res) {
         res.render("accounts/new")
-    },
+    },*/
 
     /* CREATE
     Create an account for a user. This should redirect back to all accounts view to 

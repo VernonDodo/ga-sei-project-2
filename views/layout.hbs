@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Easi Credit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>  
+<body>
+    <h1 class="heading">Easi Credit Management</h1>
+    <h2 class="subheading">Credit Management made easy</h2>
+    <p class="introduction">
+        Credit management has never been easier, with one portal to manage all<br>
+        your credit accounts. 
+    </p>
+
+    <section>
+        <h2 class="instructions">How can we help you?</h2>
+        <ul>
+            <li><a href="users/new">I want to register as a user</a></li>
+            <li><a href="accounts/search">I want to search for my accounts</a></li>
+            <li><a href="accounts/new">I want to apply for credit</a></li>
+        </ul>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('select');
+      var instances = M.FormSelect.init(elems);
+    });
+  </script>
+</body>  
+</html>  

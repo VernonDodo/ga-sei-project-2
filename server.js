@@ -6,7 +6,6 @@ const express = require('express')
 const app = express()
 const methodOverride = require('method-override')
 const routes = require('./routes/index')
-
 //= =====================
 // MIDDLEWARE
 //= =====================
@@ -29,7 +28,9 @@ app.use('/', routes)
 //====================================
 // Render the landing page for the app
 //=====================================
-
+app.get('/', function(req, res) {
+    res.render('app/index')
+})
 
 
 //= =====================

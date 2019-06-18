@@ -9,7 +9,7 @@ const UserController = {
     This function displays all the users */
     getUsers: function (req, res) {
         User.find().then(users => {
-            res.render("users/users", { users })
+            res.render("/users", { users })
         });
     },
 
@@ -17,7 +17,7 @@ const UserController = {
     Create a function that displays the details for a single user */
     getUser: function (req, res) {
         User.findById(req.params.id).then(users => {
-            res.render("users/user", { users })
+            res.render("/users/:id", { users })
         });
     },
 
@@ -35,10 +35,17 @@ const UserController = {
             last_name: req.body.lastname
             
         }).then(user => {
-            res.redirect("users/user") 
+            res.redirect("/users") 
         })
         
-    }
+    },
+
+    /* DELETE */
+    deleteUser: function(req,res) {
+        User.findByIdAndDelete(req.params.id).then(users => {
+            res.render("/users")
+        })
+    } 
 
 }
 
