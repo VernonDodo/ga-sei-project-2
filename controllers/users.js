@@ -22,7 +22,11 @@ const UserController = {
     },
 
     new: function(req,res){
+<<<<<<< HEAD
+        res.redirect("users/new")
+=======
         res.render("/users/new")
+>>>>>>> 3019311bd8bed346031b3dfb74c19ed8924394ec
     },
 
     /* CREATE
@@ -48,10 +52,6 @@ const UserController = {
     } 
 
 }
-
-/*
-EXPORTS
-*/
 
 // export the controller
 module.exports = UserController;

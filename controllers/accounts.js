@@ -10,7 +10,11 @@ const accountController = {
     },
 
     /* GET
+<<<<<<< HEAD
+    Get all accounts */
+=======
     Get all accounts*/
+>>>>>>> 3019311bd8bed346031b3dfb74c19ed8924394ec
     getAccounts: function (req, res) {
         account.find()
             .then(accounts => {
@@ -65,7 +69,7 @@ const accountController = {
                 company = "PFC"
                 break;
             case "Auto Finance":
-                company = "PFC"
+                company = "VFC"
                 break;
             case "Mortgage":
                 company = "MFC"
